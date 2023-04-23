@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(30, 38%, 92%);
+            font-family: Montserrat;
+        }
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 300px;
+        }
+
+        .image {
+            width: 200px;
+            object-fit: cover;
+            border-radius: 7px 0 0 7px;
+        }
+
+        .details {
+            padding: 20px 10px 0 20px;
+            background-color: white;
+            border-radius: 0 7px 7px 0;
+        }
+
+        .header-text {
+            font-size: 0.5rem;
+            letter-spacing: 4px;
+        }
+
+        .product-name {
+            font-family: fraunces;
+            font-size: 1.35rem;
+            padding-top: 10px;
+            padding-right: 20px;
+            line-height: 1.4rem;
+        }
+
+        .product-detail {
+            font-family: Montserrat;
+            font-size: 0.65rem;
+            line-height: 1.01rem;
+            padding-top: 15px;
+            color: gray;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .discount-price {
+            font-family: fraunces;
+            color: hsl(158, 36%, 37%);
+            font-size: 1.45rem;
+            margin-left: 0;
+        }
+
+        .full-price {
+            font-family: Montserrat;
+            font-size: 0.65rem;
+            margin-left: 10px;
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        button {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: hsl(158, 36%, 25%);
+            color: white;
+            font-size: 0.65rem;
+            cursor: pointer;
+        }
+
+        .button-img {
+            width: 7%;
+        }
+
+        .button-text {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="grid-section">
+        <img class="image" src="./images/image-product-desktop.jpg" alt="">
+        <div class="details">
+            <div class="header-text">
+                <p>PERFUME</p>
+            </div>
+            <div class="product-name">Gabrielle Essence Eau De Parfum</div>
+            <div class="product-detail">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                Perfumer-Creator for the House of CHANEL.</div>
+            <div class="price">
+                <div class="discount-price">$149.99</div>
+                <div class="full-price">$169.99</div>
+            </div>
+            <button type="button">
+                <img class="button-img" src="./images/icon-cart.svg" alt="cart-logo">
+                <div class="button-text">Add to Cart</div>
+            </button>
+        </div>
+    </section>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
